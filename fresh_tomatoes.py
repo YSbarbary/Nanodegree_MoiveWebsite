@@ -6,7 +6,7 @@ import re
 main_page_head = '''
 <head>
     <meta charset="utf-8">
-    <title>Golden Tomatoes!</title>
+    <title>Fresh Tomatoes!</title>
 
     <!-- Bootstrap 3 -->
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
@@ -51,7 +51,7 @@ main_page_head = '''
             width: 100%;
             left: 0;
             top: 0;
-            background-color: gray;
+            background-color: white;
         }
     </style>
     <script type="text/javascript" charset="utf-8">
