@@ -1,11 +1,15 @@
 Title 
 -------------
-Nanodegree Moive Website
+Movie Trailer Website: Fresh Tomatoes
 
 Description
 -----------
 
-"This project is a movies  website for displaying my favorite movies, its display the movie Title ,story line,display movie poster ,and display the movie trailer video"
+"This project is a   This project provides a simple server-side script to generate a website of movie trailers
+
+How to run
+-----------
+To run the script, clone this repository directory and run fresh_tomatoes.py. You can view the page by opening fresh_tomatoes.html.
 
 Copyright 
 ---------
