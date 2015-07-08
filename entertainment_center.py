@@ -14,6 +14,10 @@ Toy_Story = media.Movie("Toy Story 3",
 
 Avatar = media.Movie("Avatar",
                      "A marine on an alient planet",
+                     "James Cameron",
+                     "James Cameron",
+                     "Sam Worthington, Zoe Saldana, Sigourney Weaver",
+                     "7.9",
                      "http://goo.gl/cbYLTi",
                      "https://www.youtube.com/watch?v=cRdxXPV9GNQ")
 
@@ -28,11 +32,19 @@ Beauty_and_the_Beast = media.Movie("Beauty and the Beast",
 
 Lion_King = media.Movie("Lion King",
                         "Will the King Return to Pride Rock?",
+                        " Roger Allers, Rob Minkoff",
+                        " Irene Mecchi (screenplay), Jonathan Roberts (screenplay)",
+                        "Matthew Broderick, Jeremy Irons, James Earl Jones",
+                        "8.5",
                         "http://goo.gl/RVJscY",
                         "https://www.youtube.com/watch?v=YkULiFjPjU")
 
 UP = media.Movie("UP",
                  "Loves goes on a great adventure",
+                 " Pete Docter, Bob Peterson",
+                 " Pete Docter (story), Bob Peterson (story)",
+                 " Edward Asner, Jordan Nagai, John Ratzenberger",
+                 "8.3",
                  "https://goo.gl/UoH0DM",
                  "https://www.youtube.com/watch?v=qas5lWp7R0")
 
