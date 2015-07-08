@@ -131,7 +131,12 @@ movie_tile_content = '''
             data-trailer-youtube-id="{trailer_youtube_id}"
             data-toggle="modal" data-target="#trailer">
     <img src="{poster_image_url}" width="220" height="342">
-    <h2>{movie_title}</h2>
+    <h2>{movie_title}</h2></br>
+    <h2>{movie_storyline}</h2></br>
+    <h2>{movie_directors}</h2></br>
+    <h2>{movie_writer}</h2></br>
+    <h2>{movie_stars}</h2></br>
+    <h2>{movie_rating}</h2>
 </div>
 '''
 
@@ -152,6 +157,11 @@ def create_movie_tiles_content(movies):
         # Append the tile for the movie with its content filled in
         content += movie_tile_content.format(
             movie_title=movie.title,
+            movie_storyline=movie.storyline,
+            movie_directors=movie.directors,
+            movie_writer=movie.writer,
+            movie_stars=movie.stars
+            movie_rating=movie.rating,
             poster_image_url=movie.poster_image_url,
             trailer_youtube_id=trailer_youtube_id
         )
