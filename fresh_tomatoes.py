@@ -8,13 +8,10 @@ main_page_head = '''
     <meta charset="utf-8">
     <title>Fresh Tomatoes!</title>
     <!-- Bootstrap 3 -->
-    <link rel="stylesheet" href= "https://netdna.bootstrapcdn.com/
-                                  bootstrap/3.1.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href= "https://netdna.bootstrapcdn.com/
-                                  bootstrap/3.1.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href= "https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href= "https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-    <script src="https://netdna.bootstrapcdn.com
-                 /bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
     <style type="text/css" media="screen">
         body {
             padding-top: 80px;
@@ -99,8 +96,7 @@ main_page_content = '''
         <div class="modal-content">
           <a href="#" class="hanging-close"
                              data-dismiss="modal" aria-hidden="true">
-            <img src="https://lh5.ggpht.com/v4-628SilF0HtHuHdu5EzxD7
-                      WRqOrrTIDi_MhEG6_qkNtUK5Wg7KPkofp_VJoF7RS2LhxwEFCO1ICHZlc-o_=s0#w=24&h=24"/>
+            <img src="https://lh5.ggpht.com/v4-628SilF0HtHuHdu5EzxD7WRqOrrTIDi_MhEG6_qkNtUK5Wg7KPkofp_VJoF7RS2LhxwEFCO1ICHZlc-o_=s0#w=24&h=24"/>
           </a>
           <div class="scale-media" id="trailer-video-container">
           </div>
@@ -132,11 +128,11 @@ movie_tile_content = '''
             data-toggle="modal" data-target="#trailer">
     <img src="{poster_image_url}" width="220" height="342">
     <h2>{movie_title}</h2></br>
-    <h2>{movie_storyline}</h2></br>
-    <h2>{movie_directors}</h2></br>
-    <h2>{movie_writer}</h2></br>
-    <h2>{movie_stars}</h2></br>
-    <h2>{movie_rating}</h2>
+    <h5>{movie_storyline}</h5></br>
+    <strong>Directors:</strong><h5>{movie_directors}</h5></br>
+    <strong>Writer:</strong><h5>{movie_writer}</h5></br>
+    <strong>Stars:</strong><h5>{movie_stars}</h5></br>
+    <strong>Rating:</strong><h5>{movie_rating}</h5>
 </div>
 '''
 
@@ -148,11 +144,9 @@ def create_movie_tiles_content(movies):
         # Extract the youtube ID from the url
         youtube_id_match = re.search(r'(?<=v=)[^&#]+',
                                      movie.trailer_youtube_url)
-        youtube_id_match =
-        youtube_id_match or re.search(r'(?<=be/)[^&#]+',
+        youtube_id_match = youtube_id_match or re.search(r'(?<=be/)[^&#]+',
                                       movie.trailer_youtube_url)
-        trailer_youtube_id =
-        youtube_id_match.group(0) if youtube_id_match else None
+        trailer_youtube_id = youtube_id_match.group(0) if youtube_id_match else None
 
         # Append the tile for the movie with its content filled in
         content += movie_tile_content.format(
@@ -160,7 +154,7 @@ def create_movie_tiles_content(movies):
             movie_storyline=movie.storyline,
             movie_directors=movie.directors,
             movie_writer=movie.writer,
-            movie_stars=movie.stars
+            movie_stars=movie.stars,
             movie_rating=movie.rating,
             poster_image_url=movie.poster_image_url,
             trailer_youtube_id=trailer_youtube_id
@@ -174,9 +168,7 @@ def open_movies_page(movies):
 
     # Replace the placeholder for the movie
     # tiles with the actual dynamically generated content
-    rendered_content =
-    main_page_content.format(movie_tiles=create_movie_tiles_content(movies))
-
+    rendered_content = main_page_content.format(movie_tiles=create_movie_tiles_content(movies))
     # Output the file
     output_file.write(main_page_head + rendered_content)
     output_file.close()
