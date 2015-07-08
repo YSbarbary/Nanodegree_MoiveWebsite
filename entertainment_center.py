@@ -2,10 +2,15 @@ import fresh_tomatoes
 # fresh_tomatoes is the html file for the movie trailers website
 import media
 # movies instances
-Toy_Story = media.Movie("Toy Story",
+Toy_Story = media.Movie("Toy Story 3",
                         "A story of a boy and his toys that come to life",
-                        "http://goo.gl/Vid4Zn",
-                        "http://www.youtube.com/watch?v=ZZv1vki4ou4")
+                        "Lee Unkrich",
+                        " John Lasseter (story), Andrew Stanton (story)"
+                        "Tom Hanks, Tim Allen, Joan Cusack"
+                        "8.4"
+                        "http://ia.media-imdb.com/images
+                         /M/MV5BMTgxOTY4Mjc0MF5BMl5BanBnXkFtZTcwNTA4MDQyMw@@._V1_SX640_SY720_.jpg",
+                        "https://www.youtube.com/watch?v=JcpWXaA2qeg")
 
 Avatar = media.Movie("Avatar",
                      "A marine on an alient planet",
@@ -14,8 +19,12 @@ Avatar = media.Movie("Avatar",
 
 Beauty_and_the_Beast = media.Movie("Beauty and the Beast",
                                    "Can She Lift the Curse on His Life?",
+                                   "Masakazu Higuchi, Chinami Namba"
+                                   "Jacob Grimm"
+                                   "Susan Silo"
+                                   "5.7"
                                    "http://goo.gl/NMkjAi",
-                                   "https://goo.gl/C37UKF")
+                                   "https://www.youtube.com/watch?v=X6bnGiW4PNg")
 
 Lion_King = media.Movie("Lion King",
                         "Will the King Return to Pride Rock?",
@@ -29,6 +38,10 @@ UP = media.Movie("UP",
 
 Finding_Nemo = media.Movie("Finding_Nemo",
                            "An adventure at sea",
+                           " Andrew Stanton, Lee Unkrich",
+                           " Andrew Stanton (original story by), Andrew Stanton (screenplay)",
+                           " Albert Brooks, Ellen DeGeneres, Alexander Gould"
+                           "8.2"
                            "http://goo.gl/EBzM09",
                            "https://www.youtube.com/watch?v=gcwv1Gflh4Q")
 # movies Array
