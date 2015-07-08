@@ -11,6 +11,7 @@ class Movie():
                  movie_directors,
                  movie_writer,
                  movie_stars,
+                 movie_rating,
                  poster_image,
                  trailer_youtube):
         self.title = movie_title
