@@ -8,6 +8,9 @@ class Movie():
     def __init__(self,
                  movie_title,
                  movie_storyline,
+                 movie_directors,
+                 movie_writer,
+                 movie_stars,
                  poster_image,
                  trailer_youtube):
         self.title = movie_title
