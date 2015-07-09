@@ -8,8 +8,8 @@ Toy_Story = media.Movie("Toy Story 3",
                         "John Lasseter (story), Andrew Stanton (story)",
                         "Tom Hanks, Tim Allen, Joan Cusack",
                         "8.4",
-                        "http://ia.media-imdb.com/images/
-                         M/MV5BMTgxOTY4Mjc0MF5BMl5BanBnXkFtZTcwNTA4MDQyMw@@._V1_SX640_SY720_.jpg",
+                        "http://ia.media-imdb.com/images/"
+                         "M/MV5BMTgxOTY4Mjc0MF5BMl5BanBnXkFtZTcwNTA4MDQyMw@@._V1_SX640_SY720_.jpg",
                         "https://www.youtube.com/watch?v=JcpWXaA2qeg")
 
 Avatar = media.Movie("Avatar",
